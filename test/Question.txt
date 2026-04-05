@@ -1,0 +1,7 @@
+Implement a Reliable File Transfer Protocol over UDP in C language using the following criteria:
+1. Use a synchronization packet to communicate buffer size, sequence number, and window size.
+2. Define the timer intelligently (for segment and number of resend attempts i.e K) and use binary mode for file operations.
+3. Handle keyboard interruption signals and ensure a graceful shutdown.
+4. Enable file transfer with check pointing, allowing resumption from the last successfully received packet.
+5. Support the transfer of folders containing multiple files. Before sending a file, check on the receiver's side to see if the file already exists. If it does, determine whether the file was only partially transferred.
+6. Use pthreads to enable full-duplex communication.
